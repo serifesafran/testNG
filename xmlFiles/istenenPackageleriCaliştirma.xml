@@ -3,7 +3,7 @@
     <test name="day11 Test">
         <packages>
 
-            <package name="tests.day11_POM_assertions"></package>
+            <package name="tests.day10_POM_assertions"></package>
 
         </packages>
     </test>

@@ -1,4 +1,4 @@
-package Tests.Day11_POM_assertions;
+package Tests.day11_POM_assertions;
 
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
@@ -8,7 +8,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 
 public class C05_SoftAssert {
-    @Test
+    @Test(groups = "mr1")
     public void amazonTesti(){
         /*
             Genel olarak

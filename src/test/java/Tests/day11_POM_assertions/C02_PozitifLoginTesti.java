@@ -1,4 +1,4 @@
-package Tests.Day11_POM_assertions;
+package Tests.day11_POM_assertions;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -7,8 +7,8 @@ import utilities.ConfigReader;
 import utilities.Driver;
 
 public class C02_PozitifLoginTesti {
-    @Test
-    public void pozitifLoginTesti(){
+    @Test(groups = "smoke")
+    public void PozitifLoginTesti(){
         // qd anasayfaya gidin
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));
 

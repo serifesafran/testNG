@@ -1,4 +1,4 @@
-package Tests.Day11_POM_assertions;
+package Tests.day11_POM_assertions;
 
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
@@ -6,8 +6,6 @@ import org.testng.asserts.SoftAssert;
 import pages.ZeroPage;
 import utilities.ConfigReader;
 import utilities.Driver;
-
-import java.util.List;
 
 public class C06__SoftAssert {
     @Test
@@ -37,7 +35,7 @@ public class C06__SoftAssert {
 
         String expencedSecim="Eurozone(euro)";
         String actualsecim=select.getFirstSelectedOption().getText();
-        softAssert.assertEquals(actualsecim,expencedSecim"dropdownda eurozone secili degil");
+        softAssert.assertEquals(actualsecim,expencedSecim ,"dropdownda eurozone secili degil");
 
         // 10. soft assert kullanarak DropDown listesinin su secenekleri oldugunu test edin
         // "Select One", "Australia (dollar)", "Canada (dollar)",
@@ -46,7 +44,7 @@ public class C06__SoftAssert {
         // "Japan (yen)","Mexico (peso)","Norway (krone)","New Zealand (dollar)",
         // "Sweden (krona)","Singapore (dollar)","Thailand (baht)"
 
-        List<>
+
         softAssert.assertAll();
         Driver.closeDriver();
     }

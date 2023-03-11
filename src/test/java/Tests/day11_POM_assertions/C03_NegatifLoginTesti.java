@@ -1,10 +1,11 @@
-package Tests.Day11_POM_assertions;
+package Tests.day11_POM_assertions;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.QdPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class C03_NegatifLoginTesti {
     // qd anasayfaya gidin
@@ -16,9 +17,9 @@ public class C03_NegatifLoginTesti {
 
     QdPage qdPage= new QdPage();
 
-    @Test
+    @Test(groups = "smoke")
     public void negatifLogin1(){
-
+        ReusableMethods.bekle(3);
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));
         qdPage.ilkLoginLinki.click();
         qdPage.emailKutusu.sendKeys(ConfigReader.getProperty("qdGecerliUsername"));
@@ -30,7 +31,7 @@ public class C03_NegatifLoginTesti {
     }
 
 
-    @Test
+    @Test(groups = "smoke")
     public void negatifLogin2(){
         qdPage= new QdPage();
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));

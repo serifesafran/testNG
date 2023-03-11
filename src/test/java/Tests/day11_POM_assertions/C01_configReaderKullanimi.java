@@ -1,6 +1,5 @@
-package Tests.Day11_POM_assertions;
+package Tests.day11_POM_assertions;
 
-import org.checkerframework.checker.units.qual.C;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
