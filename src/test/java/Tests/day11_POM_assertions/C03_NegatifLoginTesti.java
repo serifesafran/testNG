@@ -24,7 +24,8 @@ public class C03_NegatifLoginTesti {
         qdPage.ilkLoginLinki.click();
         qdPage.emailKutusu.sendKeys(ConfigReader.getProperty("qdGecerliUsername"));
         qdPage.passwordKutusu.sendKeys(ConfigReader.getProperty("qdGecersizPassword"));
-        qdPage.loginButonu.click();
+
+        qdPage.loginButonu.submit();
 
         Assert.assertTrue(qdPage.emailKutusu.isEnabled());
         Driver.closeDriver();
@@ -38,7 +39,8 @@ public class C03_NegatifLoginTesti {
         qdPage.ilkLoginLinki.click();
         qdPage.emailKutusu.sendKeys(ConfigReader.getProperty("qdGecersizUsername"));
         qdPage.passwordKutusu.sendKeys(ConfigReader.getProperty("qdGecerliPassword"));
-        qdPage.loginButonu.click();
+        ReusableMethods.bekle(3);
+        qdPage.loginButonu.submit();
 
         Assert.assertTrue(qdPage.emailKutusu.isEnabled());
         Driver.closeDriver();
@@ -51,7 +53,8 @@ public class C03_NegatifLoginTesti {
         qdPage.ilkLoginLinki.click();
         qdPage.emailKutusu.sendKeys(ConfigReader.getProperty("qdGecersizUsername"));
         qdPage.passwordKutusu.sendKeys(ConfigReader.getProperty("qdGecersizPassword"));
-        qdPage.loginButonu.click();
+        ReusableMethods.bekle(3);
+        qdPage.loginButonu.submit();
 
         Assert.assertTrue(qdPage.emailKutusu.isEnabled());
         Driver.closeDriver();
